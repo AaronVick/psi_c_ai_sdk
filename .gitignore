@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+#Project files
+docs/PROJECT_TODO_*.md
+docs/PROJECT_TODO_*.txt
+docs/PROJECT_TODO_*.pdf
+docs/PROJECT_TODO_*.docx
+docs/PROJECT_TODO_*.doc
+docs/PROJECT*.*

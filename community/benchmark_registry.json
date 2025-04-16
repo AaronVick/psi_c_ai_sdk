@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2023-11-15",
+  "metadata": {
+    "description": "ΨC-AI SDK Community Benchmarks Registry",
+    "maintainer": "ΨC-AI SDK Team",
+    "website": "https://psi-c-ai.org/benchmarks"
+  },
+  "categories": {
+    "coherence": {
+      "description": "Benchmarks for measuring coherence computation performance",
+      "metrics": ["accuracy", "computation_time", "memory_usage"],
+      "benchmarks": []
+    },
+    "reflection": {
+      "description": "Benchmarks for reflection cycle performance and effectiveness",
+      "metrics": ["reflection_depth", "contradiction_resolution_rate", "time_per_cycle"],
+      "benchmarks": []
+    },
+    "schema": {
+      "description": "Benchmarks for schema graph operations and scaling",
+      "metrics": ["operation_throughput", "scaling_factor", "memory_efficiency"],
+      "benchmarks": []
+    },
+    "consciousness": {
+      "description": "Benchmarks for consciousness-related metrics and properties",
+      "metrics": ["psi_c_index", "stability", "coherence_preservation"],
+      "benchmarks": []
+    },
+    "integration": {
+      "description": "Benchmarks for integration with other systems and frameworks",
+      "metrics": ["compatibility", "data_transfer_efficiency", "api_coverage"],
+      "benchmarks": []
+    }
+  },
+  "benchmark_template": {
+    "id": "unique_benchmark_id",
+    "name": "Benchmark Name",
+    "description": "Detailed description of what the benchmark measures",
+    "category": "coherence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Author Name",
+      "affiliation": "Author Affiliation",
+      "email": "author@example.com"
+    },
+    "metrics": {
+      "primary": "accuracy",
+      "secondary": ["computation_time", "memory_usage"]
+    },
+    "parameters": {
+      "data_size": {
+        "description": "Size of test data",
+        "type": "integer",
+        "default": 1000
+      },
+      "complexity": {
+        "description": "Complexity level of the test",
+        "type": "string",
+        "options": ["low", "medium", "high"],
+        "default": "medium"
+      }
+    },
+    "implementation": {
+      "code_path": "benchmarks/coherence/benchmark_implementation.py",
+      "function": "run_benchmark",
+      "dependencies": ["numpy>=1.20.0", "scipy>=1.7.0"]
+    },
+    "baseline_results": [
+      {
+        "hardware": "Intel Core i7-9700K, 32GB RAM",
+        "software": "ΨC-AI SDK v0.8.0, Python 3.9",
+        "date": "2023-10-15",
+        "metrics": {
+          "accuracy": 0.95,
+          "computation_time": 1.23,
+          "memory_usage": 128.5
+        }
+      }
+    ],
+    "validation": {
+      "reproducibility_score": 0.92,
+      "validation_method": "Cross-validation with 5 folds",
+      "validated_by": ["Validator Name", "Another Validator"]
+    },
+    "references": [
+      {
+        "title": "Paper Title",
+        "authors": "Author 1, Author 2",
+        "publication": "Conference/Journal Name",
+        "year": 2022,
+        "doi": "10.xxxx/xxxxx"
+      }
+    ],
+    "tags": ["coherence", "performance", "scaling"],
+    "submitted_date": "2023-09-30",
+    "approved_date": "2023-10-10",
+    "last_updated": "2023-10-15"
+  },
+  "leaderboard": {
+    "coherence_computation_benchmark": {
+      "entries": [
+        {
+          "implementation": "OptimizedCoherenceComputation",
+          "author": "Contributor Name",
+          "date": "2023-10-20",
+          "metrics": {
+            "accuracy": 0.97,
+            "computation_time": 0.85,
+            "memory_usage": 115.2
+          },
+          "hardware": "Intel Core i9-12900K, 64GB RAM",
+          "software": "ΨC-AI SDK v0.9.0, Python 3.10"
+        }
+      ]
+    }
+  },
+  "submission_instructions": {
+    "process": "Follow the contribution process in contribution_guide.md",
+    "review": "All benchmarks undergo community review before inclusion",
+    "standards": "Must include clear metrics, reproducible code, and baseline results"
+  }
+} 

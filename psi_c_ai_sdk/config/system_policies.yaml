@@ -1,0 +1,6 @@
+# File: psi_c_ai_sdk/config/system_policies.yaml
+# System-wide epistemic trust and firewall policy parameters
+
+trust_decay: 0.01
+persuasion_entropy_threshold: 0.75
+reflection_pause_window: 10  # seconds

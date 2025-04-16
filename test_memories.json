@@ -1,0 +1,37 @@
+{
+  "memories": [
+    {
+      "uuid": "123b6ae9-28a1-4e39-8993-fa563f2725cb",
+      "content": "This is test memory 1",
+      "created_at": 1744715217.683012,
+      "importance": 1.0,
+      "initial_importance": 1.0,
+      "embedding": null,
+      "tags": [
+        "test"
+      ],
+      "metadata": {},
+      "last_accessed": 1744715217.683042,
+      "access_count": 1
+    },
+    {
+      "uuid": "7c61ebf6-daf7-4e06-9a2c-394753586ec8",
+      "content": "This is test memory 2",
+      "created_at": 1744715217.683019,
+      "importance": 1.0,
+      "initial_importance": 1.0,
+      "embedding": null,
+      "tags": [
+        "test"
+      ],
+      "metadata": {},
+      "last_accessed": 1744715217.683043,
+      "access_count": 1
+    }
+  ],
+  "metadata": {
+    "exported_at": 1744715217.6830661,
+    "memory_count": 2,
+    "decay_constant": 0.05
+  }
+}

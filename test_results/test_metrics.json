@@ -1,0 +1,43 @@
+{
+  "initialization_time": 0.00019311904907226562,
+  "hook_execution_times": {
+    "post_memory_add": {
+      "min": 3.600120544433594e-05,
+      "max": 8.106231689453125e-05,
+      "avg": 5.440711975097656e-05
+    },
+    "post_schema_update": {
+      "min": 7.104873657226562e-05,
+      "max": 0.44788503646850586,
+      "avg": 0.14958572387695312
+    },
+    "post_reflection": {
+      "min": 5.91278076171875e-05,
+      "max": 1.02016019821167,
+      "avg": 0.3402954737345378
+    },
+    "runtime_monitoring": {
+      "min": 6.008148193359375e-05,
+      "max": 6.008148193359375e-05,
+      "avg": 6.008148193359375e-05
+    }
+  },
+  "memory_usage": {},
+  "plugin_stats": {
+    "visualization": {
+      "visualizations_created": 4,
+      "files_saved": 4
+    },
+    "export": {
+      "exports_created": 2,
+      "nodes_exported": 79,
+      "edges_exported": 117
+    },
+    "integration": {
+      "api_calls": 8,
+      "webhook_calls": 8,
+      "errors": 0,
+      "last_api_call": "2025-04-16T14:33:53.875034"
+    }
+  }
+}

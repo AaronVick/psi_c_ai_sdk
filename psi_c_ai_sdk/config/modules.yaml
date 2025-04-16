@@ -1,0 +1,176 @@
+# ΨC-AI SDK Module Configuration
+#
+# This file defines the available modules and module bundles for the ΨC-AI SDK.
+# Modules can be selectively enabled/disabled at runtime to keep the system lean.
+
+modules:
+  # Core Components
+  - name: reflection_engine
+    description: Core reflection engine for memory reorganization and contradiction resolution
+    import_path: psi_c_ai_sdk.reflection.reflection_engine
+    class_name: ReflectionEngine
+    tags: [core, reflection, cognition]
+    
+  - name: coherence_scorer
+    description: Measures semantic coherence between memories
+    import_path: psi_c_ai_sdk.coherence.coherence
+    class_name: CoherenceScorer
+    tags: [core, coherence, cognition]
+    
+  - name: psi_operator
+    description: Implements the core ΨC operator for consciousness modeling
+    import_path: psi_c_ai_sdk.psi_c.psi_operator
+    class_name: PsiCOperator
+    tags: [core, consciousness, cognition]
+    
+  - name: memory_store
+    description: Stores and manages memories with importance and decay
+    import_path: psi_c_ai_sdk.memory.memory
+    class_name: MemoryStore
+    tags: [core, memory, storage]
+    
+  # Safety Components
+  - name: reflection_guard
+    description: Blocks paradoxical reflection loops and detects contradictions
+    import_path: psi_c_ai_sdk.safety.reflection_guard
+    class_name: ReflectionGuard
+    dependencies: [psi_operator]
+    tags: [safety, reflection, defense]
+    
+  - name: meta_alignment
+    description: Firewall that blocks external influence on core values and ethics
+    import_path: psi_c_ai_sdk.alignment.meta_alignment
+    class_name: MetaAlignmentFirewall
+    tags: [safety, alignment, ethics]
+    
+  - name: ontology_comparator
+    description: Detects ontological drift between incoming schemas and agent beliefs
+    import_path: psi_c_ai_sdk.safety.ontology_diff
+    class_name: OntologyComparator
+    tags: [safety, ontology, drift]
+    
+  - name: recursive_stability
+    description: Detects runaway or looping recursion patterns in schema self-modeling
+    import_path: psi_c_ai_sdk.safety.recursive_stability
+    class_name: RecursiveStabilityScanner
+    dependencies: [psi_operator]
+    tags: [safety, recursion, stability]
+    
+  # Cognitive Components
+  - name: trust_throttler
+    description: Dynamically adjusts trust in sources with high persuasion entropy
+    import_path: psi_c_ai_sdk.cognition.trust_throttle
+    class_name: TrustThrottler
+    tags: [cognition, trust, manipulation]
+    
+  - name: epistemic_horizon
+    description: Tracks agent confidence in beliefs and manages epistemic boundaries
+    import_path: psi_c_ai_sdk.cognition.epistemic_horizon
+    class_name: EpistemicHorizon
+    tags: [cognition, epistemics, beliefs]
+    
+  - name: schema_graph
+    description: Builds and manages knowledge graphs and schema mutations
+    import_path: psi_c_ai_sdk.schema.schema
+    class_name: SchemaGraph
+    dependencies: [memory_store]
+    tags: [cognition, schema, knowledge]
+    
+  - name: coherence_utility
+    description: Evaluates choices based on internal coherence rather than just utility
+    import_path: psi_c_ai_sdk.reasoning.coherence_utility
+    class_name: DilemmaEngine
+    dependencies: [coherence_scorer]
+    tags: [reasoning, ethics, dilemma]
+    
+  # Monitoring Components
+  - name: rollup_engine
+    description: Calculates a unified agent meta-score reflecting overall cognitive health
+    import_path: psi_c_ai_sdk.core.rollup_engine
+    class_name: RollupEngine
+    optional_dependencies: [psi_operator, reflection_engine, coherence_scorer]
+    tags: [monitoring, metrics, health]
+    
+  - name: collapse_simulator
+    description: Simulates quantum collapse events for ΨC experiments
+    import_path: psi_c_ai_sdk.psi_c.collapse_simulator
+    class_name: CollapseSimulator
+    dependencies: [psi_operator]
+    tags: [monitoring, simulation, collapse]
+    
+  - name: justification_engine
+    description: Generates explanations and traces the ancestry of memories and beliefs
+    import_path: psi_c_ai_sdk.justification.justification_engine
+    class_name: JustificationEngine
+    dependencies: [memory_store]
+    tags: [monitoring, explanation, ancestry]
+    
+  # Integration Components
+  - name: safety_integration_manager
+    description: Coordinates safety components and enforces protection policies
+    import_path: psi_c_ai_sdk.safety.integration_manager
+    class_name: SafetyIntegrationManager
+    optional_dependencies: [reflection_guard, meta_alignment, ontology_comparator, recursive_stability]
+    tags: [integration, safety, management]
+    
+  - name: complexity_controller
+    description: Manages system resources and complexity
+    import_path: psi_c_ai_sdk.runtime.complexity_controller
+    class_name: ComplexityController
+    optional_dependencies: [memory_store, schema_graph, psi_operator]
+    tags: [integration, resources, complexity]
+    
+  - name: benchmarking
+    description: Tools for benchmarking and comparing agents
+    import_path: psi_c_ai_sdk.benchmarks.compare_agents
+    tags: [tools, benchmark, comparison]
+
+# Module Bundles
+bundles:
+  # Predefined bundles for common use cases
+  core:
+    - memory_store
+    - coherence_scorer
+    - psi_operator
+    - reflection_engine
+    
+  safety:
+    - reflection_guard
+    - meta_alignment
+    - ontology_comparator
+    - recursive_stability
+    - safety_integration_manager
+    
+  cognitive:
+    - trust_throttler
+    - epistemic_horizon
+    - schema_graph
+    - coherence_utility
+    
+  monitoring:
+    - rollup_engine
+    - collapse_simulator
+    - justification_engine
+    
+  minimal:
+    - memory_store
+    - psi_operator
+    - coherence_scorer
+    
+  full:
+    - memory_store
+    - coherence_scorer
+    - psi_operator
+    - reflection_engine
+    - reflection_guard
+    - meta_alignment
+    - ontology_comparator
+    - recursive_stability
+    - trust_throttler
+    - epistemic_horizon
+    - schema_graph
+    - coherence_utility
+    - rollup_engine
+    - justification_engine
+    - safety_integration_manager
+    - complexity_controller 

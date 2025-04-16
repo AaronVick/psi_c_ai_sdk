@@ -1,0 +1,38 @@
+<!-- tools/trace_viewer/trace_viewer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ΨC Introspection Viewer</title>
+  <style>
+    body { font-family: sans-serif; background: #0d1117; color: #f0f6fc; padding: 2rem; }
+    .event { margin-bottom: 1rem; padding: 1rem; border-left: 4px solid #58a6ff; background: #161b22; }
+    .event h3 { margin: 0; font-size: 1rem; }
+    .event pre { background: #0d1117; padding: 0.5rem; overflow-x: auto; font-size: 0.9rem; }
+    .trace-id { font-size: 0.8rem; color: #8b949e; }
+  </style>
+</head>
+<body>
+  <h1>ΨC Agent Introspection Trace</h1>
+  <div id="trace"></div>
+
+  <script>
+    async function loadTrace() {
+      const res = await fetch("/introspect/trace");
+      const events = await res.json();
+      const container = document.getElementById("trace");
+      events.reverse().forEach(event => {
+        const el = document.createElement("div");
+        el.className = "event";
+        el.innerHTML = `
+          <h3>${event.event_type} — <span class="trace-id">${event.trace_id}</span></h3>
+          <pre>${JSON.stringify(event.data, null, 2)}</pre>
+          <small>${event.timestamp}</small>
+        `;
+        container.appendChild(el);
+      });
+    }
+    loadTrace();
+  </script>
+</body>
+</html>

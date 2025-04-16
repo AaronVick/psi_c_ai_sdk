@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""
+ΨC-AI SDK Command Line Tool
+
+This script provides a command-line interface for the ΨC-AI SDK,
+allowing users to interact with memory stores, schema graphs, and ΨC operators.
+"""
+
+import sys
+from psi_c_ai_sdk.cli import main
+
+if __name__ == '__main__':
+    sys.exit(main()) 
