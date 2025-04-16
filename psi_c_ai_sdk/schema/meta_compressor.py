@@ -342,7 +342,8 @@ class MetaSchemaCompressor:
         try:
             # Find k-cores with different k values
             for k in range(2, 4):  # Try k=2, k=3
-                for comp in nx.k_core(graph, k=k).subgraph(c) for c in nx.connected_components(nx.k_core(graph, k=k)):
+                for c in nx.connected_components(nx.k_core(graph, k=k)):
+                    comp = nx.k_core(graph, k=k).subgraph(c)
                     if len(comp) >= self.min_pattern_size:
                         subgraph = graph.subgraph(comp)
                         hash_val = self._hash_graph(subgraph)
