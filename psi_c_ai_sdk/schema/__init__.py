@@ -17,6 +17,11 @@ from psi_c_ai_sdk.schema.mutation import (
     MutationType,
     MutationEvent
 )
+from psi_c_ai_sdk.schema.hierarchical_knowledge import (
+    HierarchicalKnowledgeManager,
+    KnowledgeCategory,
+    HierarchicalRelationship
+)
 
 __all__ = [
     'SchemaNode',
@@ -27,5 +32,8 @@ __all__ = [
     'SchemaDriftMonitor',
     'SchemaMutationSystem',
     'MutationType',
-    'MutationEvent'
+    'MutationEvent',
+    'HierarchicalKnowledgeManager',
+    'KnowledgeCategory',
+    'HierarchicalRelationship'
 ]

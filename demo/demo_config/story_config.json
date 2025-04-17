@@ -1,0 +1,16 @@
+{
+  "alpha": 0.4,
+  "beta": 0.6,
+  "theta": 0.1,
+  "epsilon": 0.15,
+  "coherence_window": 75,
+  "contradiction_threshold": 0.4,
+  "reflection_depth": 4,
+  "domain_specific_settings": {
+    "character_consistency_weight": 0.8,
+    "plot_continuity_factor": 0.7,
+    "narrative_tension_threshold": 0.5,
+    "temporal_sequence_importance": 0.85,
+    "subjective_belief_tolerance": 0.6
+  }
+} 

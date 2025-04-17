@@ -1,0 +1,10 @@
+{
+  "api_key": null,
+  "api_base": null,
+  "model": "gpt-3.5-turbo",
+  "max_tokens": 150,
+  "temperature": 0.7,
+  "reflection_prompt": "You are an expert cognitive scientist tasked with analyzing how a memory affects a belief system.\n\nGiven the following new memory:\n\"{memory_content}\"\n\nAnd considering these relevant existing memories:\n{relevant_memories}\n\nPlease provide:\n1. A concise analysis of how this memory relates to existing knowledge\n2. Any potential contradictions or inconsistencies\n3. How this memory might evolve the agent's understanding\n\nKeep your response concise and focused on cognitive implications.",
+  "summary_prompt": "You are an expert in epistemology tasked with explaining coherence changes in a belief system.\n\nThe system just processed a new memory:\n\"{memory_content}\"\n\nThis resulted in the following changes:\n- Coherence changed from {old_coherence:.4f} to {new_coherence:.4f}\n- Entropy changed from {old_entropy:.4f} to {new_entropy:.4f}\n- Contradictions detected: {contradiction_count}\n- Schema updated: {schema_updated}\n{phase_transition_text}\n\nPlease provide a brief, insightful explanation of what these changes mean in terms of the system's cognitive development and belief coherence. Explain in approximately 2-3 sentences using accessible but precise language.",
+  "is_enabled": false
+} 

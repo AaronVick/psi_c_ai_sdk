@@ -1,0 +1,15 @@
+{
+  "alpha": 0.6,
+  "beta": 0.4,
+  "theta": 0.15,
+  "epsilon": 0.05,
+  "coherence_window": 100,
+  "contradiction_threshold": 0.2,
+  "reflection_depth": 5,
+  "domain_specific_settings": {
+    "memory_confidence_threshold": 0.75,
+    "medical_knowledge_weight": 0.8,
+    "patient_history_weight": 0.7,
+    "diagnostic_coherence_factor": 0.9
+  }
+} 

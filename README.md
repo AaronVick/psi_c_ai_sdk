@@ -341,7 +341,37 @@ The Agent Module provides identity and narrative tools:
 - [Recursive Safety Demo](examples/recursive_safety_demo.py): Illustrates recursive stability monitoring
 
 ## Documentation
-For full documentation, visit [docs.psi-c-ai.org](https://docs.psi-c-ai.org) (coming soon).
+
+### API Documentation
+Comprehensive API documentation is available in the [docs/api/](docs/api/README.md) directory, including:
+
+- **API Reference**: Detailed reference for all components, classes, and methods
+- **Getting Started**: Basic installation and setup instructions in [docs/api/getting_started.md](docs/api/getting_started.md)
+- **Core Components**: Documentation for fundamental components in the [docs/api/core_components/](docs/api/core_components/) directory
+- **API Index**: A searchable index of all API documentation in [docs/api/index.md](docs/api/index.md)
+
+### Guides and Technical Documentation
+- [Schema Usage Examples](docs/Schema_Usage_Examples.md): Practical examples of schema graph usage
+- [Coherence Optimization Tutorial](docs/Coherence_Optimization_Tutorial.md): Guide to optimizing coherence in your system
+- [Safety Integration Guide](docs/safety_integration_guide.md): Implementing safety mechanisms in your application
+- [Plugin Development Guide](docs/plugin_development.md): Creating plugins for the ΨC-AI SDK
+- [Operational Understanding](docs/Operational_Understanding.md): Understanding the operational aspects of the SDK
+
+### Conceptual Documentation
+- [Understanding the ΨC-AI Framework](docs/Understanding_the_ΨC-AI_Framework.md): Conceptual overview of the framework
+- [Foundation](docs/Foundation.md): Core principles and foundation of the ΨC-AI approach
+- [Unified Formalism](docs/Unified_Formalism.md): Mathematical formalism behind the system
+- [Underlying Math](docs/UnderlyingMath.md): Mathematical concepts used in the SDK
+
+### Educational and Reference Materials
+- [AI Governance](docs/AI_Governance.md): Guidelines for responsible AI governance
+- [Architecture Models Comparison](docs/architecture/compare_models.md): Comparison of different architectural approaches
+
+### Demo Documentation
+- [Memory Sandbox Documentation](tools/dev_environment/README_MEMORY_SANDBOX.md): Guide to using the Memory Sandbox
+- [Project Demo Documentation](docs/PROJECT_DEMO.md): Documentation for the ΨC-AI demonstration
+
+For project status and roadmap, see the [PROGRESS.md](PROGRESS.md) file.
 
 ## Project Status
 The ΨC-AI SDK is under active development. See the [PROGRESS.md](PROGRESS.md) file for current status and roadmap.
@@ -443,4 +473,89 @@ Key features:
 - Visualize knowledge structures
 - Suggest new conceptual links
 
-Try the included demo: `python -m tools.dev_environment.demos.memory_schema_demo` 
+Try the included demo: `python -m tools.dev_environment.demos.memory_schema_demo`
+
+### ΨC Schema Integration Demo
+
+This demo showcases the ΨC-AI SDK's cognitive coherence and schema integration capabilities. It provides an interactive interface for exploring how new memories are integrated into a schema graph and how this affects the system's coherence and entropy.
+
+## Features
+
+- Interactive memory input and processing
+- Real-time visualization of schema graph evolution
+- Coherence and entropy metrics with time-series tracking
+- Phase transition detection
+- Optional LLM integration for enhanced explanations
+- Multiple demo profiles (healthcare, legal, narrative)
+- Full persistence of system state between sessions
+
+## Prerequisites
+
+- Python 3.8+
+- Required packages (install with `pip install -r requirements.txt`):
+  - streamlit
+  - networkx
+  - matplotlib
+  - numpy
+  - pandas
+  - (Optional for LLM integration) openai
+
+## Quick Start
+
+1. Clone this repository
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the demo:
+   ```
+   streamlit run web_interface_demo.py
+   ```
+
+## Using the Demo
+
+1. Select a profile from the sidebar (default, healthcare, legal, narrative)
+2. Add a new memory in the text area and click "Process Memory"
+3. Watch how the system processes the memory and updates its schema
+4. Observe changes in coherence and entropy metrics
+5. Explore the schema graph to see how concepts are related
+6. If LLM integration is enabled, you can ask questions about the system's current state
+
+## LLM Integration (Optional)
+
+The demo can optionally use OpenAI or other LLM services to enhance explanations. To enable:
+
+1. Add your API key to the environment:
+   ```
+   export OPENAI_API_KEY=your_api_key_here
+   ```
+2. Enable LLM integration using the toggle in the sidebar
+
+## Profiles
+
+- **Default**: Empty starting state
+- **Healthcare**: Medical knowledge and health-related concepts
+- **Legal**: Legal principles and jurisprudence
+- **Narrative**: Story-based narrative understanding
+
+## System Architecture
+
+The demo consists of:
+
+- `demo_runner.py`: Core integration with the ΨC-AI SDK
+- `web_interface_demo.py`: Streamlit-based UI
+- `llm_bridge.py`: Optional LLM integration
+- `state/`: Persistent storage for system state
+- `demo_config/`: Configuration and predefined case files
+
+## Customization
+
+You can customize the demo by:
+
+1. Editing parameters in `demo_config/default_config.json`
+2. Creating new profiles with predefined memories
+3. Modifying prompt templates for LLM integration
+
+## License
+
+This demo is part of the ΨC-AI SDK and is provided under its license terms. 

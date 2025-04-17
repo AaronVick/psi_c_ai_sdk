@@ -1,0 +1,45 @@
+{
+  "profile": "healthcare",
+  "memories": [
+    {
+      "content": "The patient has type 2 diabetes with an HbA1c of 8.2%.",
+      "metadata": {
+        "confidence": 0.95,
+        "source": "medical_record",
+        "timestamp": 1680000000
+      }
+    },
+    {
+      "content": "The patient's blood pressure is consistently elevated at 145/90 mmHg.",
+      "metadata": {
+        "confidence": 0.92,
+        "source": "medical_record",
+        "timestamp": 1680000100
+      }
+    },
+    {
+      "content": "The patient reports occasional dizziness when standing quickly.",
+      "metadata": {
+        "confidence": 0.7,
+        "source": "patient_report",
+        "timestamp": 1680000200
+      }
+    },
+    {
+      "content": "The patient has been prescribed metformin 1000mg twice daily.",
+      "metadata": {
+        "confidence": 0.98,
+        "source": "prescription",
+        "timestamp": 1680000300
+      }
+    },
+    {
+      "content": "Lab results show normal kidney function with eGFR > 90 mL/min.",
+      "metadata": {
+        "confidence": 0.9,
+        "source": "lab_results",
+        "timestamp": 1680000400
+      }
+    }
+  ]
+} 

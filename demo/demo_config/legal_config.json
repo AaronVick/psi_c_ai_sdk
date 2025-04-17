@@ -1,0 +1,16 @@
+{
+  "alpha": 0.7,
+  "beta": 0.5,
+  "theta": 0.25,
+  "epsilon": 0.03,
+  "coherence_window": 150,
+  "contradiction_threshold": 0.15,
+  "reflection_depth": 6,
+  "domain_specific_settings": {
+    "precedent_weight": 0.9,
+    "statutory_authority_weight": 0.95,
+    "case_similarity_threshold": 0.7,
+    "legal_coherence_factor": 0.85,
+    "jurisdiction_specificity": 0.8
+  }
+} 

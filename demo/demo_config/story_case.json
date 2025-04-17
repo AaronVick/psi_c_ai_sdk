@@ -1,0 +1,61 @@
+{
+  "profile": "story",
+  "memories": [
+    {
+      "content": "Sarah moved to New York City after graduating from college.",
+      "metadata": {
+        "confidence": 0.9,
+        "source": "narrative",
+        "timestamp": 1672531200
+      }
+    },
+    {
+      "content": "Sarah's dream was to become a published author.",
+      "metadata": {
+        "confidence": 0.85,
+        "source": "character_background",
+        "timestamp": 1672531300
+      }
+    },
+    {
+      "content": "The city was much more expensive than Sarah had anticipated.",
+      "metadata": {
+        "confidence": 0.8,
+        "source": "narrative",
+        "timestamp": 1672531400
+      }
+    },
+    {
+      "content": "Sarah found a job as a barista to pay the bills while writing her novel.",
+      "metadata": {
+        "confidence": 0.9,
+        "source": "narrative",
+        "timestamp": 1672531500
+      }
+    },
+    {
+      "content": "At the cafe, Sarah met an elderly man named Jack who came in every morning.",
+      "metadata": {
+        "confidence": 0.85,
+        "source": "narrative",
+        "timestamp": 1672531600
+      }
+    },
+    {
+      "content": "Jack had been a successful publisher in the 1980s.",
+      "metadata": {
+        "confidence": 0.7,
+        "source": "character_background",
+        "timestamp": 1672531700
+      }
+    },
+    {
+      "content": "Sarah was too nervous to tell Jack about her novel.",
+      "metadata": {
+        "confidence": 0.75,
+        "source": "character_motivation",
+        "timestamp": 1672531800
+      }
+    }
+  ]
+} 

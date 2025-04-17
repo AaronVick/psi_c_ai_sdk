@@ -1,0 +1,46 @@
+{
+  "name": "Healthcare Case Study",
+  "description": "A sample case demonstrating medical knowledge and health-related coherence metrics.",
+  "memories": [
+    {
+      "content": "Regular exercise has been shown to reduce the risk of cardiovascular diseases.",
+      "metadata": {
+        "source": "medical_research",
+        "confidence": 0.95,
+        "category": "preventive_health"
+      }
+    },
+    {
+      "content": "A balanced diet rich in fruits and vegetables contributes to overall health and wellbeing.",
+      "metadata": {
+        "source": "nutritional_guidelines",
+        "confidence": 0.92,
+        "category": "nutrition"
+      }
+    },
+    {
+      "content": "Sleep is essential for cognitive function and memory consolidation.",
+      "metadata": {
+        "source": "sleep_research",
+        "confidence": 0.9,
+        "category": "neuroscience"
+      }
+    },
+    {
+      "content": "Chronic stress can have negative effects on both mental and physical health.",
+      "metadata": {
+        "source": "psychological_research",
+        "confidence": 0.87,
+        "category": "mental_health"
+      }
+    },
+    {
+      "content": "Vaccines have been proven effective in preventing infectious diseases.",
+      "metadata": {
+        "source": "epidemiology",
+        "confidence": 0.96,
+        "category": "preventive_medicine"
+      }
+    }
+  ]
+} 

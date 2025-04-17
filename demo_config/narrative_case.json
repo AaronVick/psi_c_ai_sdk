@@ -1,0 +1,46 @@
+{
+  "name": "Narrative Case Study",
+  "description": "A sample case demonstrating narrative comprehension and storyline coherence.",
+  "memories": [
+    {
+      "content": "Sarah moved to a small coastal town after graduating from college.",
+      "metadata": {
+        "source": "story_beginning",
+        "confidence": 0.95,
+        "category": "setting"
+      }
+    },
+    {
+      "content": "The town had a mysterious lighthouse that locals believed was haunted.",
+      "metadata": {
+        "source": "story_element",
+        "confidence": 0.92,
+        "category": "setting"
+      }
+    },
+    {
+      "content": "Sarah found a job as a marine biologist at the local research center.",
+      "metadata": {
+        "source": "character_development",
+        "confidence": 0.9,
+        "category": "plot"
+      }
+    },
+    {
+      "content": "While studying unusual marine patterns, Sarah noticed strange lights coming from the lighthouse at night.",
+      "metadata": {
+        "source": "plot_development",
+        "confidence": 0.88,
+        "category": "plot"
+      }
+    },
+    {
+      "content": "The old lighthouse keeper, Mr. Jenkins, warned Sarah to stay away from the lighthouse during full moons.",
+      "metadata": {
+        "source": "character_interaction",
+        "confidence": 0.91,
+        "category": "plot"
+      }
+    }
+  ]
+} 
